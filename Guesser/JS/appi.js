@@ -2,6 +2,8 @@
 let rNum,userNum;
 let textOne=document.getElementById("Text_1").innerHTML;
 let textTwo=document.getElementById("Text_2").innerHTML;
+rNum=Math.random()*10;
+rNum=Math.round(rNum);
 
 randomNum=()=>{
   rNum=Math.random()*10;
@@ -11,19 +13,19 @@ randomNum=()=>{
 
 hello=()=>{
   document.getElementById("Text_1").innerHTML="Time to guess the number from 1 to 10, you have 3 tries";
-  document.getElementById("Text_2").innerHTML="To start the game press button below!";
+  document.getElementById("Text_2").innerHTML="To start the game press left button below!";
 }
 
 
 playArea=()=>{
-  document.getElementById("Text_2").innerHTML="Your turn:";
+  document.getElementById("Text_2").innerHTML=`Your turn(${2-i} tries left):`;
   console.log("Wait till your choice");
   if(userNum>rNum){
     document.getElementById("Text_1").innerHTML="Number is smaller than yours, try again";
   }else if(userNum<rNum){
     document.getElementById("Text_1").innerHTML="Number is bigger than yours, try again";
   }else if(userNum==rNum){
-    document.getElementById("Text_1").innerHTML="We have a winner!!!";
+    document.getElementById("Text_1").innerHTML="We have a winner!!!<br> To start a new game press left button below!";
     document.getElementById("Text_2").innerHTML=`And my number is ${rNum}`;
   }
 }
@@ -31,7 +33,7 @@ playArea=()=>{
 
  let i=0;
 gameLoop=()=>{
-  document.getElementById("Text_2").innerHTML="And my number is ?";
+  document.getElementById("Text_2").innerHTML="And my number was ?";
   if(i<3){
     playArea();
     i++;
@@ -85,6 +87,7 @@ function color_red_Changing(){
     document.getElementById("button").style.border="2px solid black";
     document.getElementById("button").style.backgroundColor="#EC7063";
     document.getElementById("usersNumber").style.border="2px solid #E74C3C";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,37,37,1) 100%)";
 
   }else if(document.getElementById("color_red").checked== false){
     document.getElementById("color_red_label").style.color="black";
@@ -112,6 +115,7 @@ function color_green_Changing(){
     document.getElementById("button").style.border="2px solid #117A65";
     document.getElementById("button").style.backgroundColor="#28B463";
     document.getElementById("usersNumber").style.border="2px solid #117A65";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,255,117,1) 100%)";
 
   }else if(document.getElementById("color_green").checked== false){
     document.getElementById("color_green_label").style.color="black";
@@ -139,6 +143,7 @@ function color_blue_Changing(){
     document.getElementById("button").style.border="2px solid #2874A6";
     document.getElementById("button").style.backgroundColor="#3498DB";
     document.getElementById("usersNumber").style.border="2px solid #2874A6";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,255,253,1) 100%)";
 
   }else if(document.getElementById("color_green").checked== false){
     document.getElementById("color_blue_label").style.color="black";
@@ -166,6 +171,7 @@ function color_white_Changing(){
     document.getElementById("button").style.border="2px solid #F39C12";
     document.getElementById("button").style.backgroundColor="#F1C40F";
     document.getElementById("usersNumber").style.border="2px solid #F39C12";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(254,255,37,1) 100%)";
 
   }else if(document.getElementById("color_green").checked== false){
     document.getElementById("color_white_label").style.color="black";
