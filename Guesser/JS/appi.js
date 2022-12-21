@@ -181,3 +181,19 @@ function color_white_Changing(){
 
 
 //////////
+
+///Custom Cursor//////////
+
+let customCursor=document.querySelector(".cursor");
+
+window.addEventListener('mousemove',cursor);
+
+function cursor(e){
+  customCursor.style.top=e.pageY + "px";
+  customCursor.style.left=e.pageX + "px";
+}
+
+
+
+
+////////////////

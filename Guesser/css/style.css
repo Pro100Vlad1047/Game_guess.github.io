@@ -81,9 +81,21 @@ input::-webkit-inner-spin-button {
 }
 
 body {
+  cursor: none;
   font-family: "Kanit", sans-serif;
   background: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), to(rgb(255, 37, 37)));
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 37, 37) 100%);
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  pointer-events: none;
 }
 
 header {
@@ -106,6 +118,7 @@ header {
   }
 }
 header .color_changing {
+  cursor: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +167,7 @@ header .color_changing {
 }
 header .color_changing label {
   font-size: 20px;
+  cursor: none;
 }
 @media (max-width: 500px) {
   header .color_changing label {
@@ -357,6 +371,7 @@ main .play_area .play_zone .play_zone_write {
   }
 }
 main .play_area .play_zone .play_zone_write input {
+  cursor: none;
   font-size: 50px;
   text-align: center;
   width: 100px;
@@ -367,6 +382,7 @@ main .play_area .play_zone .play_zone_write input {
   border: 2px solid #E74C3C;
 }
 main .play_area .play_zone .play_zone_write button {
+  cursor: none;
   width: 200px;
   height: 40px;
   background-color: #EC7063;
