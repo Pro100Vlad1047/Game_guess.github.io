@@ -87,7 +87,7 @@ function color_red_Changing(){
     document.getElementById("button").style.border="2px solid black";
     document.getElementById("button").style.backgroundColor="#EC7063";
     document.getElementById("usersNumber").style.border="2px solid #E74C3C";
-    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,37,37,1) 100%)";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,37,37,1) 100%)fixed";
 
   }else if(document.getElementById("color_red").checked== false){
     document.getElementById("color_red_label").style.color="black";
@@ -115,7 +115,7 @@ function color_green_Changing(){
     document.getElementById("button").style.border="2px solid #117A65";
     document.getElementById("button").style.backgroundColor="#28B463";
     document.getElementById("usersNumber").style.border="2px solid #117A65";
-    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,255,117,1) 100%)";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,255,117,1) 100%)fixed";
 
   }else if(document.getElementById("color_green").checked== false){
     document.getElementById("color_green_label").style.color="black";
@@ -143,7 +143,7 @@ function color_blue_Changing(){
     document.getElementById("button").style.border="2px solid #2874A6";
     document.getElementById("button").style.backgroundColor="#3498DB";
     document.getElementById("usersNumber").style.border="2px solid #2874A6";
-    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,255,253,1) 100%)";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,255,253,1) 100%)fixed";
 
   }else if(document.getElementById("color_green").checked== false){
     document.getElementById("color_blue_label").style.color="black";
@@ -171,7 +171,7 @@ function color_white_Changing(){
     document.getElementById("button").style.border="2px solid #F39C12";
     document.getElementById("button").style.backgroundColor="#F1C40F";
     document.getElementById("usersNumber").style.border="2px solid #F39C12";
-    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(254,255,37,1) 100%)";
+    document.querySelector("body").style.background="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(254,255,37,1) 100%)fixed";
 
   }else if(document.getElementById("color_green").checked== false){
     document.getElementById("color_white_label").style.color="black";
