@@ -30,9 +30,23 @@ header{
   align-items: center;
   height: 100px;
   border-bottom:3px solid $red_border;
+  transition: 0.2s all;
   .header_left-side{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-direction: row;
     @media(max-width: 1000px){
       display: none;
+    }
+    .lang_button{
+      width: 40px;
+      height: 30px;
+      font-size: 20px;
+    }
+    .lang_button_eng{
+      color: yellow;
     }
   }
   .color_changing{
@@ -140,6 +154,7 @@ main{
       gap:2px;
       align-items: center;
       flex-direction: column;
+      transition: 0.2s all;
       .play_zone_text{
         border-radius: 12px;
         height: 58%;
@@ -150,6 +165,7 @@ main{
         align-items: center;
         flex-direction: column;
         background-color: $red_border;
+        transition: 0.2s all;
         @media(max-width: 450px){
           height: 48%;
         }
@@ -172,6 +188,8 @@ main{
         gap:60px;
         align-items:center;
         flex-direction: row;
+        transition: 0.2s all;
+
         @media(max-width: 660px){
           gap:30px;  
         }

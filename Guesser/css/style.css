@@ -111,11 +111,37 @@ header {
           align-items: center;
   height: 100px;
   border-bottom: 3px solid #E74C3C;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+header .header_left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 @media (max-width: 1000px) {
   header .header_left-side {
     display: none;
   }
+}
+header .header_left-side .lang_button {
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+}
+header .header_left-side .lang_button_eng {
+  color: yellow;
 }
 header .color_changing {
   cursor: none;
@@ -295,6 +321,8 @@ main .play_area .play_zone {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 main .play_area .play_zone .play_zone_text {
   border-radius: 12px;
@@ -314,6 +342,8 @@ main .play_area .play_zone .play_zone_text {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #E74C3C;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 @media (max-width: 450px) {
   main .play_area .play_zone .play_zone_text {
@@ -349,6 +379,8 @@ main .play_area .play_zone .play_zone_write {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
 }
 @media (max-width: 660px) {
   main .play_area .play_zone .play_zone_write {
